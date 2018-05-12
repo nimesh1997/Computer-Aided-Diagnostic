@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.widget.RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidhi.computeraideddiagnostic.PatientActivity"
+    android:id="@+id/l1">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/l2">
+
+    <ImageView
+        android:id="@+id/profile_image"
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:adjustViewBounds="true"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/user2" />
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Mobile No-"
+                android:layout_marginLeft="50dp"
+                android:layout_below="@+id/profile_image"
+                android:layout_marginRight="40dp"
+                android:layout_marginEnd="40dp"
+                android:layout_marginBottom="32dp" />
+
+            <TextView
+                android:id="@+id/profile_displayName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_below="@+id/profile_image"
+                android:layout_toRightOf="@+id/textView5"
+                android:text="Display Name"
+                android:textAppearance="@style/TextAppearance.AppCompat" />
+
+           <!-- <EditText
+                android:id="@+id/send_final_sms"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="473dp" />-->
+
+            <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Thyroid-form"
+        android:id="@+id/btn_send_smsfinal"
+        android:layout_below="@id/profile_displayName"
+        android:layout_margin="20dp"/>
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</android.widget.RelativeLayout>
+
+
+
+
+

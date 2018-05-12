@@ -1,0 +1,75 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Fragments.allergy_history">
+
+    <TextView
+        android:id="@+id/allergy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:textSize="20sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginLeft="80dp"
+        android:text="Allergies History!!"
+        android:layout_marginTop="50dp"
+        android:layout_weight="0.02"
+  />
+
+        <EditText
+            android:inputType="textMultiLine"
+            android:id="@+id/allergy_text"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="40dp"
+            android:ems="15"
+            android:layout_below="@id/allergy"
+            android:hint="Any Allergy?"
+            android:textColor="#000000"
+            android:textSize="18sp"
+            />
+        <Button
+            android:id="@+id/btn_allergy"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Save"
+            android:background="#7f30a4ab"
+            android:layout_below="@id/allergy_text"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="20dp"
+            android:layout_marginLeft="120dp"
+            android:layout_marginRight="10dp"
+            android:layout_gravity="bottom|center"/>
+
+        <!--<Button-->
+            <!--android:id="@+id/btn_allergy_view"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="View"-->
+            <!--android:layout_below="@id/allergy_text"-->
+            <!--android:layout_toRightOf="@id/btn_allergy"-->
+            <!--android:layout_marginTop="80dp"-->
+            <!--android:layout_marginLeft="50dp"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_gravity="bottom|center"/>-->
+
+    <ImageView
+        android:id="@+id/nextimg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/swipnext"
+        android:layout_below="@+id/btn_allergy"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:visibility="gone"
+        android:layout_marginTop="-100dp"
+        android:layout_marginRight="10dp"/>
+
+
+
+</RelativeLayout>

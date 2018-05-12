@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vidhi.computeraideddiagnostic.AboutUs">
+
+    <ImageView
+        android:layout_marginTop="20dp"
+        android:layout_gravity="center"
+        android:src="@drawable/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="50dp" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="sans-serif"
+        android:text="Version 1.0"
+        android:textColor="?attr/actionMenuTextColor"
+        android:typeface="serif" />
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:layout_width="350dp"
+        android:layout_height="wrap_content"
+        android:textColor="?attr/actionMenuTextColor"
+        android:text="In this modern world this app helps doctors or to assist doctors to identify disease in a patient efficiently by just studying their medical reports."
+        android:fontFamily="sans-serif"
+        />
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="340dp"
+        android:background="#a09b9b"
+        android:layout_height="2px" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:text="Developers Info"
+        android:textSize="20sp"
+        android:textColor="?attr/actionMenuTextColor"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vidhi Ajay Markhedkar (B.Tech CSE, JIIT-128)"
+        android:textColor="?attr/actionMenuTextColor"
+        android:typeface="serif"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="230dp"
+        android:background="#a09b9b"
+        android:layout_height="1.5px" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nimesh Kumar Sachan (B.Tech CSE, JIIT-128)"
+        android:textColor="?attr/actionMenuTextColor"
+        android:typeface="serif"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="230dp"
+        android:background="#a09b9b"
+        android:layout_height="1.5px" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sudhanshu Dwivedi (B.Tech CSE, JIIT-128)"
+        android:textColor="?attr/actionMenuTextColor"
+        android:typeface="serif"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="230dp"
+        android:background="#a09b9b"
+        android:layout_height="1.5px" />
+
+    <TextView
+        android:layout_marginTop="15dp"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="T.N. Raghunandan (B.Tech CSE, JIIT-128)"
+        android:textColor="?attr/actionMenuTextColor"
+        android:typeface="serif"/>
+
+    <View
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_width="230dp"
+        android:background="#a09b9b"
+        android:layout_height="1.5px" />
+
+</LinearLayout>

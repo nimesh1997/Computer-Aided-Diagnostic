@@ -1,0 +1,110 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Fragments.symptoms_present_illness">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Present Illness"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginLeft="50dp"
+            android:layout_marginTop="30dp"/>
+
+
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Diabetes"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/dia_present"/>
+            <CheckBox
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Thyroid"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="30dp"
+                android:id="@+id/thy_present"/>
+
+
+
+            <CheckBox
+                android:id="@+id/hyp_present"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginTop="20dp"
+                android:text="Hypertension" />
+
+
+            <!--<CheckBox-->
+                <!--android:id="@+id/hyp_none"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:text="None" />-->
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+
+
+            <Button
+                android:id="@+id/btn_present"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:background="#7f30a4ab"
+                android:layout_marginTop="80dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_gravity="center|bottom"
+                android:layout_centerHorizontal="true" />
+
+                <ImageView
+                    android:id="@+id/nextimg9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/swipnext"
+                    android:visibility="gone"
+                    android:layout_marginTop="-75dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_gravity="right"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_present_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="View"-->
+                <!--android:layout_marginTop="40dp"-->
+                <!--android:layout_gravity="center|bottom"-->
+                <!--android:layout_marginLeft="30dp"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Fragments.chief_complaints">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/pain"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Pain :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp">
+
+
+
+            <RadioButton
+                android:id="@+id/lower_abdomen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Lower Abdomen" />
+
+                <RadioButton
+                    android:id="@+id/upper_abdomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="13dp"
+                    android:layout_marginRight="13dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Upper Abdomen"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                android:id="@+id/none_pain"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="None" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/fever"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Fever :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:id="@+id/fever_yes">
+
+            <RadioButton
+                android:id="@+id/yes_fever"
+                android:layout_width="450dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Yes" />
+
+                <RadioGroup
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="50dp"
+                    android:nextFocusRight="@id/fever"
+                    android:id="@+id/fever_duration"
+                    android:visibility="gone"
+                    >
+
+                    <RadioButton
+                        android:id="@+id/yes_fever_morethan1week"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:ems="9"
+                        android:inputType="textPersonName"
+                        android:textColor="#000000"
+                        android:text="Duration-More than 1 week" />
+
+                    <RadioButton
+                        android:id="@+id/yes_fever_lessthan1week"
+                        android:layout_width="260dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginRight="13dp"
+                        android:ems="9"
+                        android:inputType="textPersonName"
+                        android:textColor="#000000"
+                        android:text="Duration-Less than 1 week" />
+
+                </RadioGroup>
+
+
+                <RadioButton
+                android:id="@+id/no_fever"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="No" />
+
+            </RadioGroup>
+
+
+
+            <TextView
+                android:id="@+id/cold"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Cold/Cough :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp">
+
+            <RadioButton
+                android:id="@+id/yes_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Yes" />
+
+
+           <RadioButton
+                android:id="@+id/no_cold"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="No" />
+
+
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/bp"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Blood Pressure :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp">
+
+           <RadioButton
+                android:id="@+id/high_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="High" />
+
+            <RadioButton
+                android:id="@+id/low_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Low" />
+
+           <RadioButton
+                android:id="@+id/normal_bp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="13dp"
+                android:layout_marginRight="13dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Normal" />
+
+
+            </RadioGroup>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <Button
+                    android:id="@+id/btn_chief"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="30dp"
+                    android:background="#7f30a4ab"
+                    android:text="Save" />
+
+                <ImageView
+                    android:id="@+id/nextimg1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/swipnext"
+                    android:visibility="gone"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginBottom="15dp"
+                    android:layout_gravity="right"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_chief_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:text="View"-->
+                <!--android:layout_marginTop="60dp"-->
+                <!--android:layout_gravity="bottom|right"-->
+                <!--android:layout_marginLeft="60dp"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--/>-->
+
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+
+</RelativeLayout>

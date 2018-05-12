@@ -1,0 +1,581 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Fragments.gyaneco_history">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/age_menarchy"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="14dp"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="31dp"
+                android:text="Age of Menarche :"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/last_menstural"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@+id/age_menarchy"
+                android:layout_alignStart="@+id/age_menarchy"
+                android:layout_below="@+id/age_menarchy"
+                android:layout_marginTop="23dp"
+                android:text="Last Menstrual Period :"
+                android:textColor="#000000"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/cycle"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/last_menstural"
+                android:layout_alignStart="@id/last_menstural"
+                android:layout_below="@id/last_menstural"
+                android:layout_marginTop="42dp"
+                android:text="Regularity of Cycle :"
+                android:textColor="#000000"
+                android:textSize="15dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/editText2"
+                android:layout_marginTop="40dp">
+
+                <RadioButton
+                    android:id="@+id/regular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/cycle"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Regular"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/irregular"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/regular"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Irregular"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+
+            <TextView
+                android:id="@+id/flow"
+                android:layout_width="90dp"
+                android:layout_height="50dp"
+                android:layout_alignLeft="@id/cycle"
+                android:layout_alignStart="@id/cycle"
+                android:layout_below="@id/cycle"
+                android:layout_marginTop="20dp"
+                android:text="Flow :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+            <EditText
+                android:id="@+id/editText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/age_menarchy"
+                android:layout_toEndOf="@+id/age_menarchy"
+                android:layout_toRightOf="@+id/age_menarchy"
+                android:ems="10"
+                android:hint="Age"
+                android:inputType="number"
+                android:textColor="#000000" />
+
+            <EditText
+                android:id="@+id/editText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/last_menstural"
+                android:layout_toEndOf="@+id/last_menstural"
+                android:layout_toRightOf="@+id/last_menstural"
+                android:ems="10"
+                android:clickable="false"
+                android:focusable="false"
+                android:hint="Date"
+                android:inputType="date"
+                android:textColor="#000000" />
+
+
+            <TextView
+                android:id="@+id/pain"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/flow"
+                android:layout_below="@id/flow"
+                android:layout_marginTop="60dp"
+                android:text="Pain :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/color"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/flow"
+                android:layout_below="@id/pain"
+                android:layout_marginTop="80dp"
+                android:text="Colour of Discharge"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/consistency"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/flow"
+                android:layout_below="@id/color"
+                android:layout_marginTop="50dp"
+                android:text="Consistency of Discharge :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/amount"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/consistency"
+                android:layout_below="@id/consistency"
+                android:layout_marginTop="70dp"
+                android:text="Amount of Discharge :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/duration"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/amount"
+                android:layout_below="@id/amount"
+                android:layout_marginTop="80dp"
+                android:text="Duration of Discharge :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg1"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/day1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/flow"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="2-3 days"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/day2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day1"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="3-5 days"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/day3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/day2"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="5-7 days"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+
+            <RadioGroup
+                android:id="@+id/rg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg2"
+                android:layout_marginTop="10dp">
+
+                <RadioButton
+                    android:id="@+id/lower_abdomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/pain"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="Lower Abdomen"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/upperabdomen"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lower_abdomen"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="Upper Abdomen"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/none"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upperabdomen"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="None"
+                    android:textColor="#000000" />
+                
+
+            </RadioGroup>
+
+           <!-- <TextView
+                android:id="@+id/discharge"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="DISCHARGE:"
+                android:textColor="#000000"
+                android:textSize="18sp"
+                android:layout_alignBaseline="@+id/consistency"
+                android:layout_alignBottom="@+id/consistency" /> -->
+
+            <RadioGroup
+                android:id="@+id/rg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg3"
+                android:layout_marginTop="0dp">
+
+                <RadioButton
+                    android:id="@+id/discharge_colorwhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/color"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="White"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/discharge_coloryellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lower_abdomen"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="Yellowish"
+                    android:textColor="#000000" />
+
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg4"
+                android:layout_marginTop="30dp">
+
+                <RadioButton
+                    android:id="@+id/cons_thick"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@+id/consistency"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Thick"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/cons_thin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/lower_abdomen"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Thin"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/cons_normal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/upperabdomen"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Normal"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+            <RadioGroup
+                android:id="@+id/rg6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg5"
+                android:layout_marginTop="40dp">
+
+                <RadioButton
+                    android:id="@+id/amount_excess"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBaseline="@id/amount_excess"
+                    android:layout_marginLeft="120dp"
+                    android:inputType="textPersonName"
+                    android:text="Excess"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/amount_less"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/less_excess"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Less"
+                    android:textColor="#000000" />
+
+            </RadioGroup>
+
+
+            <EditText
+                android:id="@+id/duration_enter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/rg6"
+                android:layout_marginLeft="245dp"
+                android:ems="10"
+                android:hint="15 Days"
+                android:inputType="text"
+                android:textColor="#000000"
+                android:layout_centerHorizontal="true"
+                android:layout_alignBaseline="@id/duration"/>
+
+            <TextView
+                android:id="@+id/infertility"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/duration"
+                android:layout_below="@id/duration"
+                android:layout_marginTop="50dp"
+                android:text="Infertility :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+            <RadioGroup
+                android:id="@+id/rg7"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@+id/infertility">
+
+                <RadioButton
+                    android:id="@+id/infer_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Yes"
+                    android:textColor="#000000"
+                    android:layout_marginTop="-5dp"
+                    android:layout_alignBaseline="@id/infertility"/>
+
+                <RadioButton
+                    android:id="@+id/infer_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="No"
+                    android:textColor="#000000" />
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/urine_text"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/infertility"
+                android:layout_below="@id/infertility"
+                android:layout_marginTop="60dp"
+                android:text="URINE"
+                android:textStyle="bold"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+           <!-- <View
+                android:layout_below="@+id/urine_text"
+                android:layout_width="100dp"
+                android:layout_height="1dp"
+                android:background="#Fc45"
+                /> -->
+
+            <TextView
+                android:id="@+id/urine_pain"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/urine_text"
+                android:layout_below="@id/urine_text"
+                android:layout_marginTop="20dp"
+                android:text="Pain :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg8"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg7"
+                android:layout_marginTop="60dp">
+
+                <RadioButton
+                    android:id="@+id/urine_pain_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Yes"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/urine_pain_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+
+            </RadioGroup>
+
+            <TextView
+                android:id="@+id/urine_blood"
+                android:layout_width="82dp"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/urine_pain"
+                android:layout_below="@id/urine_pain"
+                android:layout_marginTop="80dp"
+                android:text="Blood :"
+                android:textColor="#000000"
+                android:textSize="18dp" />
+
+
+            <RadioGroup
+                android:id="@+id/rg9"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rg8"
+                android:layout_marginTop="38dp">
+
+                <RadioButton
+                    android:id="@+id/urine_blood_yes"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="Yes"
+                    android:textColor="#000000" />
+
+                <RadioButton
+                    android:id="@+id/urine_blood_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:ems="9"
+                    android:inputType="textPersonName"
+                    android:text="No"
+                    android:textColor="#000000" />
+
+
+            </RadioGroup>
+
+
+            <Button
+                android:id="@+id/btn_gyno"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/urine_blood"
+                android:layout_gravity="center|bottom"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="10dp"
+                android:background="#7f30a4ab"
+                android:layout_marginTop="50dp"
+                android:text="Save" />
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_gyno_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@id/rg9"-->
+                <!--android:layout_alignBaseline="@+id/btn_gyno"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="50dp"-->
+                <!--android:text="View" />-->
+
+            <ImageView
+                android:id="@+id/nextimg4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/swipnext"
+                android:layout_below="@+id/rg8"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_marginTop="90dp"
+                android:layout_marginRight="10dp"/>
+
+
+        </RelativeLayout>
+
+
+
+
+    </ScrollView>
+
+</RelativeLayout>

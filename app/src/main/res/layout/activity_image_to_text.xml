@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Image_to_text">
+
+    <Button
+        android:id="@+id/upload"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:background="?attr/actionModeSplitBackground"
+        android:text="UPLOAD THE IMAGE"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="411dp"
+        android:layout_below="@+id/textView2"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_marginLeft="15dp"
+        android:layout_marginStart="15dp" />
+    <Button
+        android:id="@+id/logout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/actionModeSplitBackground"
+        android:text="LOGOUT"
+        android:textColor="@android:color/background_light"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="411dp"
+        android:layout_alignBaseline="@+id/upload"
+        android:layout_alignBottom="@+id/upload"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="63dp"
+        android:text="INSTRUCTIONS :"
+        android:textColor="@android:color/holo_red_dark"
+        android:textSize="25sp"
+        android:layout_below="@+id/scrollView2"
+        android:layout_toEndOf="@+id/scrollView2"
+        android:layout_toRightOf="@id/scrollView2"
+        android:layout_marginStart="21dp"
+        android:layout_marginLeft="21dp"/>
+
+    <ScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/scrollView2"></ScrollView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="300dp"
+        android:layout_height="200dp"
+        android:layout_alignStart="@+id/textView"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_below="@+id/textView"
+        android:layout_marginTop="72dp"
+        android:text="1.Click on Upload Image Button to upload the image of your report..\n2.Upload a 'clear' image to help doctor for better assessment of the Reports.\n3.You will get the results within 3 days after your submission of your information(Excluding Weekends).\n4.You will receive a SMS from the doctor regarding your result of your reports.\n5.Always stay Positive\n"
+        android:textColor="@android:color/holo_red_dark"
+        android:textColorLink="@android:color/holo_red_dark" />
+</RelativeLayout>

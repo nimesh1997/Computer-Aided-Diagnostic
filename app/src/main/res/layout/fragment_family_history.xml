@@ -1,0 +1,280 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Fragments.family_history">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <TextView
+                android:id="@+id/father"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="20dp"
+                android:text="Father :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/diabetes_f"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Diabetes"
+                android:layout_alignBaseline="@+id/father"
+                android:layout_alignBottom="@+id/father"
+                android:layout_alignLeft="@+id/thyroid_f"
+                android:layout_alignStart="@+id/thyroid_f" />
+
+            <CheckBox
+                android:id="@+id/thyroid_f"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diabetes_f"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Thyroid" />
+
+            <CheckBox
+                android:id="@+id/hypertension_f"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thyroid_f"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Hypertension" />
+
+            <CheckBox
+                android:id="@+id/others_f"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hypertension_f"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Others" />
+
+            <EditText
+                android:id="@+id/others_father"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/others_f"
+                android:visibility="gone"
+                android:ems="9"
+                android:lines="2"
+                android:scrollbars="vertical"
+                android:maxLines="4"
+                android:inputType="textMultiLine"
+                android:hint="If any?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/mother"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/others_f"
+                android:layout_marginTop="70dp"
+                android:text="Mother :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/diabetes_m"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/mother"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Diabetes" />
+
+            <CheckBox
+                android:id="@+id/thyroid_m"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diabetes_m"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Thyroid" />
+
+            <CheckBox
+                android:id="@+id/hypertension_m"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thyroid_m"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Hypertension" />
+
+            <CheckBox
+                android:id="@+id/others_m"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hypertension_m"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Others" />
+
+            <EditText
+                android:id="@+id/others_mother"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/others_m"
+                android:visibility="gone"
+                android:ems="9"
+                android:lines="2"
+                android:scrollbars="vertical"
+                android:maxLines="4"
+                android:inputType="textMultiLine"
+                android:hint="If any?"
+                android:textColor="#000000" />
+
+            <TextView
+                android:id="@+id/siblings"
+                android:layout_marginLeft="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/others_m"
+                android:layout_marginTop="70dp"
+                android:text="Siblings :"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <CheckBox
+                android:id="@+id/diabetes_s"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/siblings"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Diabetes" />
+
+            <CheckBox
+                android:id="@+id/thyroid_s"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/diabetes_s"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Thyroid" />
+
+            <CheckBox
+                android:id="@+id/hypertension_s"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/thyroid_s"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Hypertension" />
+
+            <CheckBox
+                android:id="@+id/others_s"
+                android:checked="false"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/hypertension_s"
+                android:layout_marginLeft="120dp"
+                android:ems="9"
+                android:inputType="textPersonName"
+                android:textColor="#000000"
+                android:text="Others"/>
+
+            <EditText
+                android:id="@+id/others_siblings"
+                android:layout_width="240dp"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="120dp"
+                android:layout_below="@+id/others_s"
+                android:visibility="gone"
+                android:ems="9"
+                android:lines="2"
+                android:scrollbars="vertical"
+                android:maxLines="4"
+                android:inputType="textMultiLine"
+                android:hint="If any?"
+                android:textColor="#000000" />
+            <Button
+                android:id="@+id/btn_familyhistory"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/others_siblings"
+                android:text="Save"
+                android:background="#7f30a4ab"
+                android:layout_marginTop="30dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginRight="10dp"/>
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_familyhistory_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_below="@+id/others_siblings"-->
+                <!--android:layout_alignParentRight="true"-->
+                <!--android:layout_marginRight="30dp"-->
+                <!--android:text="View"-->
+                <!--android:layout_marginTop="30dp"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+            <ImageView
+                android:id="@+id/nextimg3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/swipnext"
+                android:layout_below="@+id/others_m"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentRight="true"
+                android:visibility="gone"
+                android:layout_marginTop="200dp"
+                android:layout_marginRight="10dp" />
+
+
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+
+</RelativeLayout>

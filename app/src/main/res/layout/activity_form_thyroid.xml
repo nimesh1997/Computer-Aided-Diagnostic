@@ -1,0 +1,1163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clipToPadding="false">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context="com.example.vidhi.computeraideddiagnostic.form_thyroid">
+
+
+        <TextView
+            android:id="@+id/thy_form"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="15dp"
+            android:text="Thyroid-Form"
+            android:textColor="#000000"
+            android:textSize="25sp" />
+
+        <View
+            android:layout_width="155dp"
+            android:layout_height="1dp"
+            android:layout_below="@+id/thy_form"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="0.5dp"
+            android:background="#8c8989" />
+
+
+        <TextView
+            android:id="@+id/f_t1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="100dp"
+            android:paddingLeft="14dp"
+            android:text="Name:"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t1"
+            android:layout_marginLeft="250dp"
+            android:hint="Name"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <TextView
+            android:id="@+id/f_t3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t1"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Age :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t3"
+            android:layout_marginLeft="250dp"
+            android:hint="Age"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t3"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="14dp"
+            android:text="Sex :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t5"
+            android:layout_below="@+id/f_t4">
+
+            <RadioButton
+                android:id="@+id/f_t6m"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t5"
+                android:layout_marginLeft="250dp"
+                android:text="Male"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t6f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t6m"
+                android:layout_marginLeft="250dp"
+                android:text="Female"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t5"
+            android:layout_marginTop="50dp"
+            android:paddingLeft="14dp"
+            android:text="On thyroxine :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t7"
+            android:layout_below="@+id/thy_rg1">
+
+            <RadioButton
+                android:id="@+id/f_t8t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t7"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t8f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t8t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t7"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Query on thyroxine :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t9"
+            android:layout_below="@+id/thy_rg2">
+
+            <RadioButton
+                android:id="@+id/f_t10t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t9"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t10f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t10t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t9"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="On antithyroid medication :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t11"
+            android:layout_below="@+id/thy_rg2">
+
+            <RadioButton
+                android:id="@+id/f_t12t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t11"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t12f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t12t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t11"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Sick :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t13"
+            android:layout_below="@+id/thy_rg4">
+
+            <RadioButton
+                android:id="@+id/f_t14t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t13"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t14f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t14t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t13"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Pregnant :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t17"
+            android:layout_below="@+id/thy_rg5">
+
+            <RadioButton
+                android:id="@+id/f_t18t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t17"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t18f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t17t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t17"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Thyroid surgery :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t19"
+            android:layout_below="@+id/thy_rg7">
+
+            <RadioButton
+                android:id="@+id/f_t20t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t19"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t20f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t20t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t19"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="I131 treatment :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t21"
+            android:layout_below="@+id/thy_rg8">
+
+            <RadioButton
+                android:id="@+id/f_t22t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t21"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t22f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t22t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t21"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Query hypothyroid :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t23"
+            android:layout_below="@+id/thy_rg9">
+
+            <RadioButton
+                android:id="@+id/f_t24t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t23"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t24f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t24t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t23"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Query hyperthyroid :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t25"
+            android:layout_below="@+id/thy_rg10">
+
+            <RadioButton
+                android:id="@+id/f_t26t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t25"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t26f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t26t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t27"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t25"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Lithium :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t27"
+            android:layout_below="@+id/thy_rg11">
+
+            <RadioButton
+                android:id="@+id/f_t28t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t27"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t28f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t28t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t27"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Goitre :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t29"
+            android:layout_below="@+id/thy_rg12">
+
+            <RadioButton
+                android:id="@+id/f_t30t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t29"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t30f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t30t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t29"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Tumor :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t31"
+            android:layout_below="@+id/thy_rg13">
+
+            <RadioButton
+                android:id="@+id/f_t32t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t31"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t32f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t32t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t31"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="hypopituitary :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t33"
+            android:layout_below="@+id/thy_rg14">
+
+            <RadioButton
+                android:id="@+id/f_t34t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t33"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t34f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t34t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t35"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t33"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="psych :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t35"
+            android:layout_below="@+id/thy_rg15">
+
+            <RadioButton
+                android:id="@+id/f_t36t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t35"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t36f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t36t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t37"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t35"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="TSH measured :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t37"
+            android:layout_below="@+id/thy_rg16">
+
+            <RadioButton
+                android:id="@+id/f_t38t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t37"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t38f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t38t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t39"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t37"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="TSH :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t40"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t39"
+            android:layout_marginLeft="250dp"
+            android:hint="TSH"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t39"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="T3 measured :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t41"
+            android:layout_below="@+id/f_t40">
+
+            <RadioButton
+                android:id="@+id/f_t42t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t41"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t42f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t42t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t41"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="T3 :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t43"
+            android:layout_marginLeft="250dp"
+            android:hint="T3"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t43"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="TT4 measured :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t45"
+            android:layout_below="@+id/f_t44">
+
+            <RadioButton
+                android:id="@+id/f_t46t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t45"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t46f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t46t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t45"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="TT4 :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t48"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t47"
+            android:layout_marginLeft="250dp"
+            android:hint="TT4"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t47"
+            android:layout_marginTop="55dp"
+
+            android:paddingLeft="14dp"
+            android:text="T4U measured :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t49"
+            android:layout_below="@+id/f_t48">
+
+            <RadioButton
+                android:id="@+id/f_t50t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t49"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t50f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t49t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t49"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="T4U :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t51"
+            android:layout_marginLeft="250dp"
+            android:hint="T4U"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t51"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="FTI measured :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t53"
+            android:layout_below="@+id/f_t52">
+
+            <RadioButton
+                android:id="@+id/f_t54t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t53"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t54f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t53t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <TextView
+            android:id="@+id/f_t55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t53"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="FTI :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t55"
+            android:layout_marginLeft="250dp"
+            android:hint="FTI"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t57"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t55"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="TBG measured :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+
+        <RadioGroup
+            android:id="@+id/thy_rg22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t57"
+            android:layout_below="@+id/f_t56">
+
+            <RadioButton
+                android:id="@+id/f_t58t"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t57"
+                android:layout_marginLeft="250dp"
+                android:text="Yes"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t58f"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t57t"
+                android:layout_marginLeft="250dp"
+                android:text="No"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/f_t59"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t57"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="TBG :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/f_t60"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/f_t59"
+            android:layout_marginLeft="250dp"
+            android:hint="TBG"
+            android:maxLines="1"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/f_t61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/f_t59"
+            android:layout_marginTop="55dp"
+            android:paddingLeft="14dp"
+            android:text="Referral source :"
+            android:textColor="#000000"
+            android:textSize="18sp" />
+
+        <RadioGroup
+            android:id="@+id/thy_rg23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/f_t61"
+            android:layout_below="@+id/f_t60">
+
+            <RadioButton
+                android:id="@+id/f_t621"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBaseline="@+id/f_t61"
+                android:layout_marginLeft="250dp"
+                android:text="WEST"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t622"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t621"
+                android:layout_marginLeft="250dp"
+                android:text="STMW"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t623"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t622"
+                android:layout_marginLeft="250dp"
+                android:text="SVHC"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t624"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t623"
+                android:layout_marginLeft="250dp"
+                android:text="SVI"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t625"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t624"
+                android:layout_marginLeft="250dp"
+                android:text="SVHD"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <RadioButton
+                android:id="@+id/f_t626"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/f_t625"
+                android:layout_marginLeft="250dp"
+                android:text="OTHER"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+        </RadioGroup>
+
+
+        <Button
+            android:id="@+id/thy_result"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/send22"
+            android:layout_alignLeft="@+id/send22"
+            android:layout_alignRight="@+id/send22"
+            android:layout_alignStart="@+id/send22"
+            android:layout_below="@+id/thy_rg23"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:onClick="send_to_server"
+            android:text="SUBMIT"
+            android:textColor="#000000" />
+
+        <Button
+            android:id="@+id/send22"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/thy_result"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:text="SEE RESULT"
+            android:textColor="#000000" />
+
+        <!-- <TextView
+         android:layout_width="wrap_content
+         android:layout_height="match_parent"
+         android:id="@+id/tee"
+         />-->
+
+
+    </RelativeLayout>
+</ScrollView>

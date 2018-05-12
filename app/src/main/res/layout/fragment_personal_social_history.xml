@@ -1,0 +1,296 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.vidhi.computeraideddiagnostic.Fragments.personal_social_history">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="20dp"
+            android:paddingBottom="10dp"
+
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="84dp">
+
+                <TextView
+                    android:id="@+id/sleep"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight=".15"
+                    android:text="Sleep:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".75"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/normal_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="25dp"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Normal" />
+
+                    <RadioButton
+                        android:id="@+id/less_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/normal_s"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/normal_s"
+                        android:text="Less" />
+
+                    <RadioButton
+                        android:id="@+id/more_s"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/less_s"
+                        android:layout_marginLeft="17dp"
+                        android:layout_toRightOf="@+id/less_s"
+                        android:text="More" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="92dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/appetite"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:layout_weight=".15"
+                    android:text="Appetite"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".75"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/normal_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/textView4"
+                        android:layout_marginLeft="27dp"
+                        android:layout_toRightOf="@+id/textView4"
+                        android:text="Normal" />
+
+                    <RadioButton
+                        android:id="@+id/less_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignTop="@+id/normal_s"
+                        android:layout_marginLeft="12dp"
+                        android:layout_toRightOf="@+id/normal_s"
+                        android:text="Less" />
+
+                    <RadioButton
+                        android:id="@+id/more_a"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignBottom="@+id/less_s"
+                        android:layout_marginLeft="17dp"
+                        android:layout_toRightOf="@+id/less_s"
+                        android:text="More" />
+                </RadioGroup>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight=".01"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/micturation"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_weight=".15"
+                    android:text="Micturation:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RelativeLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight=".75"
+                    android:orientation="vertical">
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp">
+
+                        <RadioButton
+                            android:id="@+id/normal_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/textView4"
+                            android:layout_marginLeft="23dp"
+                            android:layout_toRightOf="@+id/textView4"
+                            android:text="Normal" />
+
+                        <RadioButton
+                            android:id="@+id/burning_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignTop="@+id/normal_m"
+                            android:layout_marginLeft="23dp"
+                            android:layout_toRightOf="@+id/normal_m"
+                            android:text="Burning" />
+
+                        <RadioButton
+                            android:id="@+id/less_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/less_s"
+                            android:layout_marginLeft="23dp"
+                            android:layout_toRightOf="@+id/less_s"
+                            android:text="less"
+                            android:textSize="15sp">
+
+                        </RadioButton>
+
+
+                        <RadioButton
+                            android:id="@+id/more_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+
+                            android:text="More" />
+
+                        <RadioButton
+                            android:id="@+id/dys_m"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="23dp"
+                            android:text="Dysuria" />
+
+
+                    </RadioGroup>
+
+
+                </RelativeLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="20dp">
+
+                <TextView
+                    android:id="@+id/bowel"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_weight=".15"
+                    android:text="Bowel Habits:"
+                    android:textColor="#000000"
+                    android:textSize="15sp" />
+
+                <RadioGroup
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="45dp"
+                    android:layout_weight=".65"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <RadioButton
+                        android:id="@+id/normal_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:text="Normal" />
+
+                    <RadioButton
+                        android:id="@+id/constipation_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:text="Constipation" />
+
+                    <RadioButton
+                        android:id="@+id/diarrhea_b"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="1dp"
+                        android:layout_marginBottom="5dp"
+                        android:text="Diarrhea" />
+                </RadioGroup>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+            <Button
+                android:id="@+id/btn_per_soc_history"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:text="Save"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="120dp"
+                android:layout_marginTop="20dp"
+                android:background="#7f30a4ab"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"/>
+
+                <ImageView
+                    android:id="@+id/nextimg8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/swipnext"
+                    android:visibility="gone"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_gravity="right"/>
+                </LinearLayout>
+
+            <!--<Button-->
+                <!--android:id="@+id/btn_per_soc_history_view"-->
+                <!--android:layout_width="wrap_content"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_gravity="bottom|center"-->
+                <!--android:text="View"-->
+                <!--android:layout_centerHorizontal="true" />-->
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>
